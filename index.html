@@ -10,11 +10,16 @@
 
 <body>
     <div class="main-container">
-        <h2>"Administrador de tareas Dany"</h1>
+        <h2>Administrador de Tareas Dany</h1>
             <form onsubmit="handleFormSubmit(event)">
-                <input required type="text" placeholder="Title" name="title">
-                <textarea placeholder="Add the task description" name="description" rows="5"></textarea>
-                <button type="submit">Submit</button>
+                <input type="text" placeholder="Titulo" name="title" id="task-title">
+                <small id="title-error"></small>
+                <textarea placeholder="Descripcion de Tarea"
+                name="description"
+                rows="5"
+                id="task-description"></textarea>
+                <small id="description-error"></small>
+                <button class="submit-btn" type="submit">Submit</button>
             </form>
             <ul id="task-list-container" class="task-list"></ul>
     </div>
